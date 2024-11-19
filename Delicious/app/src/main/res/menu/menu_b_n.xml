@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_new"
+        android:icon="@drawable/color_new"
+        android:title="Mới" />
+    <item android:id="@+id/menu_list_cook"
+        android:icon="@drawable/color_cook"
+        android:title="Thực đơn" />
+    <item android:id="@+id/menu_like"
+        android:icon="@drawable/color_favorite"
+        android:title="Yêu thích" />
+    <item android:id="@+id/menu_share"
+        android:icon="@drawable/color_share"
+        android:title="Chia sẻ" />
+    <item android:id="@+id/menu_profile"
+        android:icon="@drawable/color_personal"
+        android:title="Tùy chọn" />
+</menu>

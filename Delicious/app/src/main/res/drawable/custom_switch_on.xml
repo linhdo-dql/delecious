@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:bottom="@dimen/switch_padding"
+        android:end="-4dp"
+        android:gravity="fill_horizontal"
+        android:start="@dimen/switch_padding"
+        android:top="0dp">
+        <shape>
+            <solid android:color="@color/hintColor" />
+            <corners android:radius="24dp" />
+            <size android:height="27dp"
+                android:width="65dp"/>
+
+        </shape>
+    </item>
+</layer-list>

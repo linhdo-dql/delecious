@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10sp"
+    android:elevation="4dp"
+    android:layout_gravity="center">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/tt_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/mainColor">
+        <ImageView
+            android:id="@+id/btn_close_dialog"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_close3"/>
+        <TextView
+            android:id="@+id/tv_index_step_u"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:fontFamily="@font/sourcesansproregular"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:text="Xác thực đăng nhập"/>
+
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_margin="10dp"
+        android:text="Bạn vừa đăng nhập bằng tài khoản: "/>
+    <TextView
+        android:id="@+id/tv_name_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="@color/mainColor"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="0326838898"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:text="Để chúng tôi biết đó là bạn vui lòng nhập mã xác thực:"/>
+    <LinearLayout
+        android:layout_width="180dp"
+        android:layout_height="50sp"
+        android:background="@drawable/bg_edt2"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_verified2"
+            android:layout_margin="20dp"
+            android:layout_gravity="center_vertical"/>
+        <EditText
+            android:id="@+id/edt_verify_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:fontFamily="@font/sourcesansproregular"
+            android:background="@android:color/transparent"
+            android:hint="Mã xác thực"
+            android:textColorHint="#99736B6B"
+            android:paddingLeft="10dp"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/btn_vertify_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/bg_btn"
+        android:text="Xác thực"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/layout_rule"/>
+</LinearLayout>
+</androidx.cardview.widget.CardView>

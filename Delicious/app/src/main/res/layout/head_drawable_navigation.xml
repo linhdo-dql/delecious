@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="130dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="start"
+    android:backgroundTintMode="screen"
+    android:background="@drawable/bg2">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:orientation="horizontal">
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/mainAvatar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/bg"
+            app:riv_corner_radius="100dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="10dp" />
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/subAvatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/bg"
+            app:riv_corner_radius="100dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_cheffood"
+            android:layout_gravity="center_vertical"
+            />
+        <TextView
+            android:id="@+id/tv_AuthorDN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Linh đỗ"
+            android:textSize="18sp"
+            android:shadowColor="@color/black"
+            android:fontFamily="@font/sourcesansproboldi"
+            android:textColor="@color/white"
+            android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_accDN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tài khoản: 0326838898"
+        android:textSize="12sp"
+        android:shadowColor="@color/black"
+        android:fontFamily="@font/sourcesansproregular"
+        android:textColor="@color/white"
+        android:layout_marginLeft="25dp"/>
+    </LinearLayout>

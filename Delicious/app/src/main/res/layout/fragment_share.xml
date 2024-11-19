@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.Share">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingBottom="20dp">
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/img_avatar_food"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/bg3"
+            app:riv_corner_radius="20dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="15dp"
+            />
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_camera"/>
+            <TextView
+                android:id="@+id/tta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thêm ảnh đại diện món ăn"
+                android:textColor="@color/white"
+                android:fontFamily="@font/sourcesansproregular"/>
+        </LinearLayout>
+        <EditText
+            android:id="@+id/edt_name_food_share"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/img_avatar_food"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"
+            android:maxLines="1"
+            android:lines="1"
+            android:inputType="text"
+            android:background="@drawable/bg_edt3"
+            android:hint="Tên món ăn..."
+            android:textAlignment="center"
+            android:textColorHint="@drawable/color_hinttext"
+            android:fontFamily="@font/sourcesansproregular"
+            android:textColor="@color/textColor"
+            android:textStyle="bold"
+            />
+        <EditText
+            android:id="@+id/edt_profile_food"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_name_food_share"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_edt3"
+            android:hint="Giới thiệu sơ về món ăn..."
+            android:textColor="@color/textColor"
+            android:minHeight="100dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:isScrollContainer="false"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:gravity="top"
+            android:textSize="16sp"
+            android:privateImeOptions="10dp"
+            android:textColorHint="@drawable/color_hinttext"
+            android:fontFamily="@font/sourcesansproregular"
+            android:textStyle="bold" />
+        <RelativeLayout
+            android:id="@+id/layout_food_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_profile_food"
+            android:layout_marginTop="20dp"
+            android:gravity="start">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loại món: "
+                android:textStyle="bold"
+                android:textColor="@color/textColor"
+                android:textSize="16sp"
+                android:layout_centerVertical="true"/>
+                <Spinner
+                    android:id="@+id/auto_food_type"
+                    android:layout_width="200dp"
+                    android:popupBackground="@color/spinerlayout"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:text="1 người"
+                    android:background="@drawable/bg_edt3"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/layout_amout_pp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_food_type"
+            android:layout_marginTop="20dp"
+            android:gravity="start">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Khẩu phần: "
+                android:textStyle="bold"
+                android:textColor="@color/textColor"
+                android:textSize="16sp"
+                android:layout_centerVertical="true"/>
+            <Spinner
+                android:id="@+id/spinner_amount_people"
+                android:layout_width="200dp"
+                android:popupBackground="@color/spinerlayout"
+                android:layout_alignParentRight="true"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:padding="0dp"
+                android:text="1 người"
+                android:background="@drawable/bg_edt3"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/layout_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_amout_pp"
+            android:layout_marginTop="20dp"
+            android:gravity="start">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thời gian nấu: "
+                android:textStyle="bold"
+                android:textColor="@color/textColor"
+                android:textSize="16sp"
+                android:layout_centerVertical="true"/>
+            <Spinner
+                android:id="@+id/spinner_time_cook"
+                android:layout_width="200dp"
+                android:popupBackground="@color/spinerlayout"
+                android:layout_alignParentRight="true"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:padding="0dp"
+                android:text="1 giờ"
+                android:background="@drawable/bg_edt3"/>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nguyên liệu:"
+            android:layout_below="@id/layout_time"
+            android:layout_marginTop="20dp"
+            android:textSize="22sp"
+            android:textColor="@color/textColor"
+            android:textStyle="bold"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv_component"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/tv2"/>
+        <TextView
+            android:id="@+id/btn_addComponent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" + Thêm nguyên liệu"
+            android:layout_below="@id/rcv_component"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="16sp"
+            android:textColor="@color/textColor" />
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cách làm:"
+            android:layout_below="@id/btn_addComponent"
+            android:layout_marginTop="20dp"
+            android:textSize="22sp"
+            android:textColor="@color/textColor"
+            android:textStyle="bold"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv_step"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/tv4"/>
+        <TextView
+            android:id="@+id/btn_addStep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" + Các bước"
+            android:layout_below="@id/rcv_step"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="16sp"
+            android:textColor="@color/textColor" />
+        <TextView
+            android:id="@+id/btn_share_food"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_btn"
+            android:text="Chia sẻ"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/btn_addStep"/>
+    </RelativeLayout>
+</ScrollView>

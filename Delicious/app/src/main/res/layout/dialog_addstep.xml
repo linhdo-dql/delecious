@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/bgColor"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10sp"
+    android:elevation="4dp"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_gravity="center">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/tt_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/appbarColor">
+        <ImageView
+            android:id="@+id/btn_close_step_dialog"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_close3"/>
+        <TextView
+            android:id="@+id/tv_index_step"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:fontFamily="@font/sourcesansproregular"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:text="Bước 1"/>
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tt_dialog"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_step_dia"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:textColorHighlight="@color/textColor"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="16sp"
+            android:background="@drawable/bg_edt3"
+            android:gravity="start"
+            android:padding="15dp"
+            android:hint="Nhập cách làm..."
+            android:inputType="textMultiLine|text"
+            android:textColorHint="@drawable/color_hinttext"
+            android:fontFamily="@font/sourcesansproregular"
+            android:textColor="@color/textColor"
+            android:textStyle="bold"
+            android:scrollHorizontally="false"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/textColor"
+            android:layout_gravity="center_vertical"
+            android:text="Ảnh: "/>
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/img_step_dialog"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/ic_camera2"
+                android:layout_gravity="center_vertical"
+                android:scaleType="centerCrop"
+                app:riv_corner_radius="10dp" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/btn_step_add_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_btn"
+            android:text="Thêm"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+    </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

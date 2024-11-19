@@ -1,0 +1,58 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="20dp"
+    app:cardBackgroundColor="@color/bgColor">
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_step"
+    android:orientation="horizontal"
+    android:padding="5dp">
+<TextView
+    android:id="@+id/tv_stepindex"
+    android:layout_width="105dp"
+    android:textColor="@color/textColor"
+    android:layout_height="50dp"
+    android:text="Bước 1:"
+    android:fontFamily="@font/sourcesansproregular"
+    android:textStyle="bold"
+    android:gravity="center"
+    android:background="@drawable/bg_step"
+    android:textAlignment="center"
+    android:layout_alignParentLeft="true"
+    android:textSize="18sp"/>
+<TextView
+    android:id="@+id/tv_step_content"
+    android:layout_width="match_parent"
+    android:layout_below="@id/tv_stepindex"
+    android:layout_marginTop="5dp"
+    android:fontFamily="@font/sourcesansproregular"
+    android:gravity="top"
+    android:textAlignment="gravity"
+    android:padding="15dp"
+    android:background="@drawable/bg_edt3"
+    android:hint="Nhập cách làm..nbhhjbhhvghjuhuuhhjjhjhjjhjjjhhhggyyyyyyygggghjhhghjgg."
+    android:textColorHint="@drawable/color_hinttext"
+    android:paddingLeft="15dp"
+    android:textColor="@color/textColor"
+    android:layout_height="wrap_content"
+    android:textSize="16sp"/>
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/img_step"
+        android:layout_width="match_parent"
+        android:layout_height="205dp"
+        android:minWidth="30dp"
+        android:layout_below="@id/tv_step_content"
+        app:riv_corner_radius="20dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="10dp"/>
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

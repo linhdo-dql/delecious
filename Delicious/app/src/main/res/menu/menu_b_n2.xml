@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/dish_profile"
+        android:icon="@drawable/ic_n1"
+        android:title="Giới thiệu" />
+    <item android:id="@+id/dish_component"
+        android:icon="@drawable/ic_n2"
+        android:title="Nguyên liệu" />
+    <item android:id="@+id/dish_step"
+        android:icon="@drawable/ic_n3"
+        android:title="Cách làm" />
+    <item android:id="@+id/dish_comment"
+        android:icon="@drawable/ic_n4"
+        android:title="Đánh giá" />
+</menu>

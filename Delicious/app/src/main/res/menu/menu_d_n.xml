@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/menu_new"
+            android:icon="@drawable/color_new"
+            android:title="Mới"
+            android:iconTint="@color/textColor" />
+        <item android:id="@+id/menu_list_cook"
+            android:icon="@drawable/color_cook"
+            android:title="Thực đơn" />
+        <item android:id="@+id/menu_like"
+            android:icon="@drawable/color_favorite"
+            android:title="Yêu thích" />
+        <item android:id="@+id/menu_share"
+            android:icon="@drawable/color_share"
+            android:title="Chia sẻ" />
+        <item android:id="@+id/menu_profile"
+            android:icon="@drawable/color_personal"
+            android:title="Tùy chọn" />
+    </group>
+    <item android:title="Tài khoản" android:checked="true">
+        <menu>
+            <item android:id="@+id/acc_change_pass"
+                android:icon="@drawable/ic_changpass"
+                android:title="Đổi mật khẩu"
+                android:iconTint="@color/textColor" />
+            <item android:id="@+id/acc_signout"
+                android:icon="@drawable/ic_signout"
+                android:title="Đăng xuất"/>
+        </menu>
+    </item>
+    <item android:title="Hỗ trợ">
+        <menu>
+            <item android:id="@+id/share_app"
+                android:icon="@drawable/ic_share3"
+                android:title="Chia sẻ ứng dụng"
+                android:iconTint="@color/textColor" />
+            <item android:id="@+id/rate"
+                android:icon="@drawable/ic_rate"
+                android:title="Đánh giá"/>
+        </menu>
+    </item>
+</menu>
